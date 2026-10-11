@@ -1,8 +1,10 @@
 body {
     background-color : rgb(28, 28, 28);
     color : white;
-    font-family :'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+    /*font-family :'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    */
+    font-family : "Orbitron", sans-serif;
+    font-weight : 450;
     
 }
 
