@@ -7,7 +7,7 @@ const images = container.querySelectorAll("img");
 for(let i=0; i < images.length; i++){
     
     images[i].addEventListener("click", function(){
-        modalImage.src = images[i].src;
+        modalImage.src = images[i].dataset.full;
         modal.classList.remove("no-display");
     });
 }

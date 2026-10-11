@@ -111,6 +111,13 @@ img {
     margin : 0 auto;
 }
 
+.smallgallery img:hover{
+    transform : scale(1.1);
+    z-index : 1;
+    border : 1px solid transparent;
+    border-color : rgb(145, 144, 144);
+}
+
 hr {
     margin : 20px;
 }
