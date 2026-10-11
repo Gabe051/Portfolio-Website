@@ -1,0 +1,169 @@
+body {
+    background-color : rgb(28, 28, 28);
+    color : white;
+    font-family :'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    
+}
+
+img {
+    width: 100%;
+    height:auto;
+
+}
+
+h1 {
+    text-align:center;
+}
+
+h2{
+    text-align: center;
+    font-size : 2.0rem;
+}
+
+h3{
+    text-align : center;
+    font-size : 1.8rem;
+    color:white;
+    text-shadow : 2px 2px rgb(119, 118, 118)
+    
+}
+
+hr{
+    border-color:rgb(77, 77, 77)
+}
+
+.navbar ul{
+    list-style-type : none;
+    padding : 0px;
+    margin : 0px;
+    display : flex;
+    justify-content : center;
+}
+
+.navbar li{
+    float : left
+}
+
+.navbar a{
+    color : white;   
+    text-decoration: none;
+    text-align: center;
+    font-size : 1.3rem;
+    padding:15px;
+    display : block;
+}
+
+.navbar a.active {
+    text-decoration : underline;
+    text-decoration-thickness: 0.125rem;
+}
+
+img {
+    user-select : none;
+}
+
+.hero img{
+    width : 10%;
+    display : block;
+    margin : auto;
+    
+}
+
+.gallery {
+    display : grid;
+    grid-template-columns : repeat(3, minmax(0,1fr));
+    gap : 10px;
+    margin : 0 auto;
+    align-items : center;
+    padding-left:5%;
+    padding-right:5%;
+}
+
+.gallery img{
+    width : 100%;
+    height : auto;
+    display : block;
+    
+    transform-origin: center;
+}
+
+.gallery img:hover{
+    transform : scale(1.1);
+    z-index : 1;
+    border : 1px solid transparent;
+    border-color : rgb(145, 144, 144);
+}
+
+.smallgallery {
+    display :grid;
+    grid-template-columns : repeat(1, minmax(0,1fr));
+    gap : 10px;
+    margin : 0 auto;
+    align-items : center;
+    padding-left : 5%;
+    padding-right : 5%;
+}
+
+.smallgallery img {
+    width : 60%;
+    height : auto;
+    display : block;
+    margin : 0 auto;
+}
+
+hr {
+    margin : 20px;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.8);
+    width : 100%;
+    height : 100%;
+    left : 0;
+    top : 0;
+    position : fixed;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    z-index : 100;
+
+}
+
+.modal img{
+    width : 60%;
+    height : auto;
+}
+
+.no-display {
+    display : none;
+}
+
+.pagecontainer {
+    display : flex;
+    column-gap : 5%;
+    justify-content: center;
+    align-items : center;
+}
+
+#aboutname{
+    font-size : 2.8rem;
+    text-shadow: 2px 2px rgb(20,20,20);
+}
+
+.pageblock {
+    width : 45%;
+    height : 500px;
+    
+}
+
+#profile-photo {
+    width : 40%;
+    height : auto;
+    display : block;
+    margin : auto;
+}
+
+#quote{
+    font-weight : bold;
+}
