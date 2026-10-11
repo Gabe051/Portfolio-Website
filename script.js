@@ -5,7 +5,7 @@ const images = container.querySelectorAll("img");
 
 
 for(let i=0; i < images.length; i++){
-    images[i].loading = "lazy";
+    
     images[i].addEventListener("click", function(){
         modalImage.src = images[i].src;
         modal.classList.remove("no-display");
