@@ -8,6 +8,7 @@ for(let i=0; i < images.length; i++){
     
     images[i].addEventListener("click", function(){
         fullImage = images[i].getAttribute("data-full");
+        console.log(fullImage);
         modalImage.src = fullImage;
         modal.classList.remove("no-display");
     });
