@@ -174,8 +174,11 @@ hr {
 }
 
 .modal img{
-    width : 60%;
+    width : auto;
     height : auto;
+    max-width : 85vw;
+    max-height : 80vh;
+
 }
 
 .no-display {
@@ -209,11 +212,6 @@ hr {
         margin-left : 10px;
     }    
 }
-
-
-
-
-
 
 .quote {
     display : flex;
