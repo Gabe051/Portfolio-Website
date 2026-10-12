@@ -61,11 +61,7 @@ hr{
 }
 
 
-#heroimg {
-    width : 40%;
-    display : block;
-    margin : auto;    
-}
+
 
 .socials {
     display : flex;
@@ -74,10 +70,24 @@ hr{
     padding-left : 20px;
 }
 
+.socials a {
+    display : block;
+    flex : 0 0 auto;
+}
+
 .socials img {
     display : block;
     width : 50px;
     height : auto;
+    object-fit : contain;
+}
+
+#heroimg {
+    display : block;
+    width : 40%;
+    max-width : 500px;
+    height : auto;
+    margin : 0 auto;    
 }
 
 
