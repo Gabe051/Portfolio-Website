@@ -211,6 +211,10 @@ hr {
         height : 500px;
         margin-left : 10px;
     }    
+
+    #aboutname {
+        font-size : 2.0rem;
+    }
 }
 
 .quote {
