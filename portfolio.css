@@ -90,6 +90,13 @@ hr{
     margin : 0 auto;    
 }
 
+@media (max-width: 768px) {
+    #heroimg {
+        width: 90%;
+        max-width: none;
+        height: auto;
+    }
+}
 
 .gallery {
     display : grid;
