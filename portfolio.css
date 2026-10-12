@@ -110,11 +110,6 @@ hr{
 }
 
 
-@media (max-width: 768px) {
-    .gallery {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
 
 .gallery img{
     width : 100%;
@@ -185,16 +180,30 @@ hr {
     display : none;
 }
 
-#aboutname{
+.aboutname{
     font-size : 2.8rem;
-
 }
 
 #profile-photo {
-    width : 40%;
+    width : 80%;
     height : auto;
     display : block;
     margin : auto;
+    padding : 20px;
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .aboutname{
+        max-width : 100%;
+    }
+
+    .aboutname .surname {
+        white-space : nowrap;
+    }
 }
 
 
