@@ -69,31 +69,28 @@ hr{
     box-sizing : border-box;
 }
 
-.social-logos{
-    display : flex;
-    align-items: center;
-    justify-self : start;
-    gap : 20px;
-}
 
-.social-logos img{
+#heroimg {
+    width : 40%;
     display : block;
-    width : 24px;
-    height : 24px;
+    margin : auto;
+    
     
 }
 
-
-.heroimg {
-    grid-column : 2;
-    justify-self : center;
+.socials {
+    display : flex;
+    align-items: center;
+    gap : 15px;
+    padding-left : 20px;
 }
 
-.heroimg img {
+.socials img {
     display : block;
-    width : auto;
-    height : 300px;
+    width : 50px;
+    height : auto;
 }
+
 
 .gallery {
     display : grid;
