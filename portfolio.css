@@ -108,6 +108,13 @@ hr{
     padding-right:5%;
 }
 
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, minmax(0,1fr));
+    }
+}
+
 .gallery img{
     width : 100%;
     height : auto;
