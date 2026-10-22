@@ -28,7 +28,9 @@ image_names = []
 
 portfolio_title = simpledialog.askstring("Enter Name","Enter a name for the Portfolio Section:")
 
+
 print("Converting images to full and thumbnail ...")
+
 for image in images:
     webpimage = image.with_suffix(".webp")
     output = full_folder / webpimage.name 
@@ -38,6 +40,7 @@ for image in images:
     subprocess.run(["magick", str(image), "-resize", "25%", "-quality", "92", str(output)], check=True)
     image_names.append(webpimage.name)
     print(image)  
+
 print("Finished!")
 
 section_name = folder.name
@@ -48,8 +51,8 @@ section_open_html = (
     f"                <div class=\"gallery\">\n"
 )
 
-
 images_html = ""
+
 for name in image_names:
     images_html += (
     f'                    <img loading="lazy" ' 
@@ -68,6 +71,7 @@ section_close_html = (
 full_image_html = section_open_html + images_html + section_close_html
 
 print("Building HTML")
+
 html_path = base_folder / "index.html"
 
 with html_path.open("r", encoding='utf-8') as html_file:
@@ -79,4 +83,4 @@ with html_path.open("w", encoding='utf-8') as html_file:
     html_file.write(source_code)
 
 print("DONE!")
-time.sleep(10)
+time.sleep(5)
